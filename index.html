@@ -2,94 +2,497 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>MUSICON Homepage</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,900&amp;subset=cyrillic" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale-1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Alice&display=swap&subset=cyrillic" rel="stylesheet">
+	
+	<!-- <link href="https://fonts.googleapis.com/css?family=Philosopher:400,700&display=swap&subset=cyrillic" rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
+	<title>ToDo</title>
 </head>
 <body>
-	<section id="first" class="first">
-		<header class="header">
-			<div class="container d-flex align-items-center">
-					<img src="img/logo.png" alt="" class="logo"><span class="logo__title">MUSICON</span>
-				<ul class="menu d-flex">
-					<li class="menu__item">
-						<a href="#">Main</a>
-					</li>
-					<li class="menu__item">
-						<a href="#">Your style</a>
-					</li>
-					<li class="menu__item">
-						<a href="#">Tracks</a>
-					</li>
-					<li class="menu__item">
-						<a href="#">Download</a>
-					</li>
-				</ul>
-				<div class="auth d-flex align-items-center">
-					<div class="auth__img">
-						<img src="img/user.png" alt="">
-					</div>
-				<div class="auth__info">
-					<div class="auth__profile">
-						Profile
-					</div>
-					<h6 class="auth__name">
-						Leonardo
-					</h6>
-				</div>
-				<a href="#" class="auth__play">
-					<img src="img/pmusic.png" alt="">
-				</a>
-				<button class="auth__more">
-					
-				</button>
-				</div>
+
+
+	<!-- Menu for big screen -->
+
+	<div id="menu">
+	<div class="slider">
+		
+			<div class="item item-1">
+				<a href="#home"><span class="text">Главная</span></a>
 			</div>
-		</header>
-		<div class="content">
-			<div class="container d-flex">
-				<div class="offer d-flex justify-content-center align-items-center">
-					<div class="offer__body">
-						<h1 class="offer__title">
-							take your lovely music
-							<span class="offer__word">
-								<span>anywhere</span>
-							</span>
-						</h1>
-						<div class="offer__btns d-flex">
-							<a href="#" class="offer__btn btn-round">
-								This week top #10
-							</a>
-							<a href="#" class="offer__btn btn-round">
-								Hot clips top #20
-							</a>
-							<a href="#" class="offer__btn btn-round">
-								Creators choice
-							</a>
-						</div>
-						<a href="#" class="offer__cta btn">
-							Learn more
-						</a>
-					</div>
-				</div>
-				<div class="slider">
-					<div class="ellipse"></div>
-					<div class="lines-dot"></div>
-					<div class="plus"></div>
-					<div class="rag"></div>
-					<div class="setka-dots"></div>
-					<div class="tri"></div>
-					<div class="curl"></div>
-				</div>
+			<div class="item item-2">
+				<a href="#repairtablets"><span class="text">Ремонт</span></a>
+			</div>
+			<div class="item item-3">
+				<a href="#services"><span class="text">Услуги</span></a>
+			</div>
+			<div class="item item-4">
+				<a href="#decoding"><span class="text">Раскодировка</span></a>
+			</div>
+			<div class="item item-5">
+				<a href="#navigation"><span class="text">Навигация</span></a>
+			</div>
+			<div class="item item-6">
+				<a href="#contacts"><span class="text">Контакты</span></a>
 			</div>
 		</div>
-	</section>
+		</div>
 
-	<script src="js/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+	<header class="navbar">
+		<div class="container-own">
+			<div class="navbar__block">
+			<div class="navbar__logo">
+				<span class="logo">TelRem Service</span><br>
+				<!-- <span class="sublogo"><sub>Сервисный центр</sub></span> -->
+			</div>
+			<nav class="navbar__wrapper" id="menu">
+			<li class="navbar__item"><a href="#home" class="navbar__link">Главная</a></li>
+			<li class="navbar__item"><a href="#repairtablets" class="navbar__link">Ремонт</a></li>
+			<li class="navbar__item"><a href="#services" class="navbar__link">Услуги</a></li>
+			<li class="navbar__item"><a href="#decoding" class="navbar__link">Раскодировка</a></li>
+			<li class="navbar__item"><a href="#navigator" class="navbar__link">Навигация</a></li>
+			<li class="navbar__item"><a href="#questions" class="navbar__link">Вопросы</a></li>
+			<li class="navbar__item"><a href="#contacts" class="navbar__link">Контакты</a></li>
+			
+			<div class="section-ham">
+				<div class="menu-block">
+					<nav class="menu-nav">
+						<a href="#home" class="menu-nav__link">Главная</a>
+						<a href="#repairtablets" class="menu-nav__link">Ремонт планшетов</a>
+						<a href="#services" class="menu-nav__link">Услуги</a>
+						<a href="#decoding" class="menu-nav__link">Раскодировка</a>
+						<a href="#navigator" class="menu-nav__link">Навигация</a>
+						<a href="#questions" class="menu-nav__link">Вопросы</a>
+						<a href="#contacts" class="menu-nav__link">Контакты</a>
+					</nav>
+							
+				</div>
+						
+					</div>
+
+					<div class="ham">
+				<a href="#" class="ham__menu">
+					<span class="cross"></span>
+				</a>
+			</div>
+		</nav>
+		</div>
+		</div>
+	</header>
+	<main>
+		<section class="section hero">
+			<div class="hero__wrapper">
+					<span class="hero__title">Telrem Service</span>
+					<span class="hero__subtitle">качество гарантировано</span>
+				</div>
+			<img src="img/her.jpg" alt="" class="hero__image">
+			<div class="container-own">
+			</div>
+		</section>
+
+		<section class="section__form">
+			<div class="container-own">
+				<form action="telegram.php" method="POST" class="form">
+					<span class="form__title">Оставьте Ваши данные</span>
+					<span class="form__title">и мы Вам перезвоним</span>
+					<div class="form__wrapper">
+					<input type="text" placeholder="Введите имя" id="" name="user_name" class="form__control">
+					<input type="text" placeholder="Введите номер телефона" id="" name="user_phone" class="form__control">
+					<input type="text" placeholder="Введите e-mail" id="" name="user_email" class="form__control">
+					<textarea rows="5" placeholder="Напишите Ваш вопрос" id="" name="user_message" class="form__message"></textarea>
+					<button type="submit" class="btn">Отправить заявку</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
 	
-	<script src="js/script.js"></script>
+
+		<section class="offer" id="offer">
+			<div class="container-own">
+				<a id="repairtablets"></a>
+			<h3 class="offer__title">Ремонт мобильных телефонов, планшетов, навигаторов любой сложности в Могилеве</h3>
+			<p class="offer__text">Сервисный центр "Телремсервис" (Могилев) выполняет качественный, профессиональный ремонт мобильных телефонов и планшетов стандарта GSM: Apple iPhone, iPad, Samsung, Nokia, Htc, Sony, Lg, Blackberry, Philips, Motorola, Lenovo, Asus, Huawei, Zte, Meizu, Texet, Prestigio, Keneksi и других любого уровня сложности. Мы успешно работаем в Могилеве с 2009 года, и на протяжении более 10 лет хорошо зарекомендовали себя в сфере услуг по ремонту планшетов, сотовых телефонов всех известных марок и их техническому обслуживанию.</p>
+			<p class="offer__text mrn">Наш сервисный центр имеет сертификат соответствия государственного образца. Срочный ремонт сотовых телефонов и планшетов осуществляется в минимальные сроки с применением специального оборудования и оригинальных запчастей, более половины поломок может быть устранено в Вашем присутствии, а при выявлении дополнительных неисправностей дальнейший ремонт смартфонов производится только после согласования всех деталей лично.</p>
+			<!-- <div class="offer__image">
+				<div class="offer__card">
+					<img src="img/sony-front.png" data-img="img/sony-back.png" alt="" class="sony">
+				</div>
+				<div class="offer__card">
+					<img src="img/samsung-front.png" data-img="img/samsung-back.png" alt="" class="sony">
+				</div>
+				<div class="offer__card">
+					<img src="img/huawei-front.png" data-img="img/huawei-back.png" alt="" class="sony">
+				</div>
+				<div class="offer__card">
+					<img src="img/honor-front.png" data-img="img/honor-back.png" alt="" class="sony">
+				</div>
+				<div class="offer__card">
+					<img src="img/apple-front.png" data-img="img/apple-back.png" alt="" class="sony">
+				</div>
+				<div class="offer__card">
+					<img src="img/iphone-front.png" data-img="img/iphone-back.png" alt="" class="sony">
+				</div>
+				<div class="offer__card">
+					<img src="img/sams-front.png" data-img="img/sams-back.png" alt="" class="sony">
+				</div>	
+				<div class="offer__card">
+					<img src="img/sams-front.png" data-img="img/sams-back.png" alt="" class="sony">
+				</div>	
+				<div class="offer__card">
+					<img src="img/sams-front.png" data-img="img/sams-back.png" alt="" class="sony">
+				</div>
+				<div class="offer__card">
+					<img src="img/sams-front.png" data-img="img/sams-back.png" alt="" class="sony">
+				</div>
+				<div class="offer__card">
+					<img src="img/sams-front.png" data-img="img/sams-back.png" alt="" class="sony">
+				</div>
+				<div class="offer__card">
+					<img src="img/sams-front.png" data-img="img/sams-back.png" alt="" class="sony">
+				</div>
+			</div> -->
+			<p class="offer__text">Мы ценим всех наших клиентов и работаем с каждым на результат. Мы быстро развиваемся и постоянно отслеживаем самые последние тенденции на рынке технического обслуживания и ремонта мобильных устройств. Мы не стоим на месте и используем самые новейшие, современные технологии и оборудование для ремонта цифровой техники, учитываем самые малейшие Ваши потребности. Наши сотрудники всегда готовы оказать самую профессиональную консультацию и ответить на любые Ваши вопросы, связанные с ремонтом гаджетов.</p>
+			<p class="offer__text mrn">Сервисный центр в Могилеве "Телремсервис" производит ремонт в минимальные сроки, включая оформление и ремонт по безналичному расчёту. В случае необходимости и целесообразности подготавливаем акты технических заключений для списания. Если Вы предпочитаете качественное обслуживание и ремонт в кротчайшие сроки, станьте нашим клиентом!</p>
+		</section>
+
+		<section class="section map">
+		<div id="map">
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af879d136aeba89e9b2553007c133a4b23705f1c974b35d348d2d414fac1d0325&amp;width=100%&amp;height=555&amp;lang=ru_RU&amp;scroll=false"></script>
+		</div>
+			<!-- <div class="timer">
+            <div class="timer-title">До конца акции осталось
+            </div> -->
+           <!--  <div class="timer-action">
+                До конца акции осталось
+            </div> -->
+
+            <!-- <div class="timer-numbers" id="timer">
+            	<img src="img/mac.png" alt="" class="mac">
+            	<div class="timer__wrapper">
+            		<span id="timer-days">19</span>
+                	<span class="day-sub"><sub>дня(ей)</sub></span>
+                	<span class="devided">:</span>
+                	<span id="timer-hours">45</span>
+                	<span class="hours-sub"><sub>часа(ов)</sub></span>
+                	<span class="devided">:</span>
+                	<span id="timer-minutes">12</span>
+                	<span class="minutes-sub"><sub>минут(ы)</sub></span>
+                	<span id="timer-seconds"><sub>12</sub></span>
+            	</div>
+                
+            </div>
+        </div>
+
+        <section class="price">
+        	<div class="container-own">
+        	<table class="price__table">
+  <thead>
+    <tr>
+      <th>Название</th>
+      <th>Описание работ</th>
+      <th>Стоимость, бел. руб.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Замена экрана iPhone 4, 4s, 5, 5S, 5C, 6, 6S, 7 в составе модуля (жки и тачскрин), Ipad, Ipod</strong></td>
+      <td>Замена необходимой детали (электро-механический ремонт 2-ой категории), профилактика и чистка аппарата, диагностика. </td>
+      <td>50-150</td>
+    </tr>
+    <tr>
+      <td><strong>Замена динамиков (слуховой или полифонический), микрофона, симм-коннектора, системного разъема, кнопки включения, кнопки home для iPhone 4, 4S, 5, 5S, 5C, 6, 6S, 7</strong></td>
+      <td>Замена необходимой детали (электро-механический ремонт 2-ой категории), профилактика и чистка аппарата, диагностика. </td>
+      <td>35-45</td>
+    </tr>
+    <tr>
+      <td><strong>Замена АКБ (аккумуляторной батареи) iPhone 3G, 3Gs, 4, 4S, 5, 5S, 5C, 6, 6S, 7</strong></td>
+      <td>Тестирование  перед установкой АКБ на стенде cadex 7400, замена старой АКБ (электро-механический ремонт 2-ой категории), профилактика и чистка аппарата, диагностика.</td>
+      <td>35-45</td>
+    </tr>
+    <tr>
+      <td><strong>Замена корпуса iPhone  белый, черный (задняя крышка, вставки, стекла, боковина)</strong></td>
+      <td>Демонтаж всех компонентов старого корпуса, монтаж в новый (электро-механический ремонт 2-ой категории), профилактика и чистка установливаемых узлов, диагностика.</td>
+      <td>80</td>
+    </tr>	 -->				
+    <!-- <tr>
+      <td><strong></strong></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>ellipsis</strong></td>
+      <td>true</td>
+      <td>Set to true to enable the ellipsis</td>
+    </tr>
+    <tr>
+      <td><strong>title</strong></td>
+      <td>false</td>
+      <td>Set to true to show the full data on hover</td>
+    </tr>
+    <tr>
+      <td><strong>afterShow</strong></td>
+      <td> $.noop</td>
+      <td>The callback fired after the show/reveal</td>
+    </tr>
+    <tr>
+      <td><strong>afterHide</strong></td>
+      <td>$.noop</td>
+      <td>The callback fired after the hide/conceal</td>
+    </tr> -->
+  <!-- </tbody>
+</table> -->
+</div>
+        </section>
+			<div class="container-own">
+			<div class="offer-block">
+			<div class="offer-block__garant">
+				<h2 class="offer-block__title">Гарантия качества выполненных работ</h2>
+				<p class="offer-block__text">Всем клиентам предоставляется документальная гарантия на все различные виды выполненных работ. Срок гарантии составляет от одного до четырёх месяцев и зависит только от характера оказанных услуг.</p>
+				<h4 class="offer__bold">Условия проведения ремонта (убедительная просьба читать внимательно)</h4>
+				<ul>
+					<li>Сервисный центр устраняет только заявленные неисправности</li>
+					<li>Сервисный центр не дает никаких предварительных гарантий относительно ожидаемых результатов и сроков ремонта.</li>
+					<li>Оборудование с согласия клиента принято без разборки и без проверки внутренних повреждений.</li>
+					<li>На аппараты подвергшиеся воздействию влаги, удару, или прижатию гарантийные обязательства не распространяются</li>
+				</ul>
+				<h4 class="offer__bold">Условия гарантии</h4>
+				<p class="offer__boldleft">Сервисный центр предоставляет гарантию для своих клиентов от 30 дней до 4 месяцев в зависимости от вида выполненных работ и качества установленных запчастей. На ВОССТАНОВЛЕННЫЕ ДИСПЛЕИ, ПЛАТЫ, ШЛЕЙФА ГАРАНТИИ НЕТ!</p>
+			</div>
+			</div>
+			<!-- <div class="offer-block__image">
+				<img src="img/monitor.jpg" alt="">
+			</div> -->
+			</div>
+
+			<div id="accordion" class="accordion" style="max-width: 100%; margin: 0 auto;">
+    <div class="accordion-item show">
+      <div class="accordion-item-header">
+        10 причин выбрать нас:
+      </div>
+      <div class="accordion-item-content">
+        <ul class="accordion-list">
+        	<li class="accordion-list-li">- Качество обслуживания подтверждено сертификатом СТБ BY/112 04.08. 008 02216;</li>
+        	<li class="accordion-list-li">- Высококвалифицированные специалисты;</li>
+        	<li class="accordion-list-li">- Современное оборудование для ремонта;</li>
+        	<li class="accordion-list-li">- Оригинальные запчасти от производителей;</li>
+        	<li class="accordion-list-li">- Склад комплектующих для замены;</li>
+        	<li class="accordion-list-li">- Бесплатная диагностика;</li>
+        	<li class="accordion-list-li">- Возможен срочный ремонт;</li>
+        	<li class="accordion-list-li">- Удобное месторасположение;</li>
+        	<li class="accordion-list-li">- Система скидок для постоянных клиентов;</li>
+        	<li class="accordion-list-li">- Мы уверены в качестве работы и предоставляем гарантию до 6 месяцев.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-item-header">
+        Ремонт телефонов
+      </div>
+      <div class="accordion-item-content">
+        Мобильные телефоны и смартфоны – это сложная цифровая техника, которая может выходить из строя по разным причинам: из-за некорректной эксплуатации устройства; повреждений, полученных в результате падения или контакта с водой; нелицензионного программного обеспечения; производственного брака. Если в работе девайса появились сбои и их невозможно устранить доступными пользователям способами, рекомендуем обратиться в наш сервисный центр.
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-item-header">
+        Ремонт планшетов
+      </div>
+      <div class="accordion-item-content">
+        Планшеты сравнительно недавно вошли в нашу жизнь, но уже успели стать неотъемлемой частью бытия современного человека. Они дают нам связь с миром, помогают в учебе и работе, наполняют разнообразием наш досуг, снабжают актуальной и полезной информацией. Потому для многих людей выход этого девайса из строя превращается в серьезную проблему. Но наш сервисный центр охотно готов помочь. Мы гарантируем высочайшее качество работы и отличный сервис.
+      </div>
+    </div>
+			</div>
+		
+
+		<section class="repair">
+			<div class="container-own">
+				<div class="repair__title">
+					<a id="services"></a>
+					<h2 class="repair-title__text">Наши услуги</h2>
+				</div>
+				<div class="repair__wrapper">
+					<div class="repair__card wow fadeInUp" data-wow-delay="0.1s">
+						<h3 class="repair-card__title">Ремонт яблочной техники</h3>
+						<!-- <img src="img/apple.png" alt="" class="repair__apple"> -->
+						<p class="repair__text">Ремонт продукции компании Apple - iPhone и iPad всех версий - один из основных профилей работы нашего сервисного центра. Наша отличительная особенность в данном сегменте - это профессионализм, наличие большого спектра запасных частей (от экранов до компонентных шлейфов) и адекватные цены.</p>
+					</div>
+					<div class="repair__card wow fadeInUp" data-wow-delay="0.2s">
+						<h3 class="repair-card__title">Ремонт яблочной техники</h3>
+						<!-- <img src="img/apple.png" alt="" class="repair__apple"> -->
+						<p class="repair__text">Ремонт продукции компании Apple - iPhone и iPad всех версий - один из основных профилей работы нашего сервисного центра. Наша отличительная особенность в данном сегменте - это профессионализм, наличие большого спектра запасных частей (от экранов до компонентных шлейфов) и адекватные цены.</p>
+					</div>
+					<div class="repair__card wow fadeInUp" data-wow-delay="0.3s">
+						<h3 class="repair-card__title">Ремонт яблочной техники</h3>
+						<!-- <img src="img/apple.png" alt="" class="repair__apple"> -->
+						<p class="repair__text">Ремонт продукции компании Apple - iPhone и iPad всех версий - один из основных профилей работы нашего сервисного центра. Наша отличительная особенность в данном сегменте - это профессионализм, наличие большого спектра запасных частей (от экранов до компонентных шлейфов) и адекватные цены.</p>
+					</div>
+					<div class="repair__card wow fadeInUp" data-wow-delay="0.4s">
+						<h3 class="repair-card__title">Ремонт яблочной техники</h3>
+						<!-- <img src="img/apple.png" alt="" class="repair__apple"> -->
+						<p class="repair__text">Ремонт продукции компании Apple - iPhone и iPad всех версий - один из основных профилей работы нашего сервисного центра. Наша отличительная особенность в данном сегменте - это профессионализм, наличие большого спектра запасных частей (от экранов до компонентных шлейфов) и адекватные цены.</p>
+					</div>
+					<div class="repair__card wow fadeInUp" data-wow-delay="0.5s">
+						<h3 class="repair-card__title">Ремонт яблочной техники</h3>
+						<!-- <img src="img/apple.png" alt="" class="repair__apple"> -->
+						<p class="repair__text">Ремонт продукции компании Apple - iPhone и iPad всех версий - один из основных профилей работы нашего сервисного центра. Наша отличительная особенность в данном сегменте - это профессионализм, наличие большого спектра запасных частей (от экранов до компонентных шлейфов) и адекватные цены.</p>
+					</div>
+					<div class="repair__card wow fadeInUp" data-wow-delay="0.6s">
+						<h3 class="repair-card__title">Ремонт яблочной техники</h3>
+						<!-- <img src="img/apple.png" alt="" class="repair__apple"> -->
+						<p class="repair__text">Ремонт продукции компании Apple - iPhone и iPad всех версий - один из основных профилей работы нашего сервисного центра. Наша отличительная особенность в данном сегменте - это профессионализм, наличие большого спектра запасных частей (от экранов до компонентных шлейфов) и адекватные цены.</p>
+					</div>
+					<div class="repair__card wow fadeInUp" data-wow-delay="0.7s">
+						<h3 class="repair-card__title">Ремонт яблочной техники</h3>
+						<!-- <img src="img/apple.png" alt="" class="repair__apple"> -->
+						<p class="repair__text">Ремонт продукции компании Apple - iPhone и iPad всех версий - один из основных профилей работы нашего сервисного центра. Наша отличительная особенность в данном сегменте - это профессионализм, наличие большого спектра запасных частей (от экранов до компонентных шлейфов) и адекватные цены.</p>
+					</div>
+					<div class="repair__card wow fadeInUp" data-wow-delay="0.8s">
+						<h3 class="repair-card__title">Ремонт яблочной техники</h3>
+						<!-- <img src="img/apple.png" alt="" class="repair__apple"> -->
+						<p class="repair__text">Ремонт продукции компании Apple - iPhone и iPad всех версий - один из основных профилей работы нашего сервисного центра. Наша отличительная особенность в данном сегменте - это профессионализм, наличие большого спектра запасных частей (от экранов до компонентных шлейфов) и адекватные цены.</p>
+					</div>
+					<div class="repair__card wow fadeInUp" data-wow-delay="0.9s">
+						<h3 class="repair-card__title">Ремонт яблочной техники</h3>
+						<!-- <img src="img/apple.png" alt="" class="repair__apple"> -->
+						<p class="repair__text">Ремонт продукции компании Apple - iPhone и iPad всех версий - один из основных профилей работы нашего сервисного центра. Наша отличительная особенность в данном сегменте - это профессионализм, наличие большого спектра запасных частей (от экранов до компонентных шлейфов) и адекватные цены.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="uncoding">
+			<div class="container-own">
+				<span class="uncoding__title">Раскодировка (разлочка, отвязка) от оператора в Могилеве без потери гарантии и данных</span>
+				<p class="uncoding__text">Раскодировка (разлочка, отвязка) позволит Вам использовать sim-карты любой сети в Вашем телефоне, независимо от того с каким оператором заключался договор и в каком салоне покупался аппарат. При раскодировке гарантия на телефон, прошивка и Ваши данные не теряются, так как мы раскодируем Ваш аппарат с помощью уникального NCK кода.</p>
+				<p class="uncoding__text">Обратившись к нам, Вы получите полностью раскодированный (unlock) телефон в самые короткие сроки!</p>
+				<p class="uncoding__text">От 2-х аппаратов СКИДКИ % (уточняйте по телефону).</p>
+			</div>
+		</section>
+
+		<section class="tabs">
+			<div id="service-block" class="service">
+        <div class="container">
+            <span class="tabs__title">Распространенные причины выхода из строя различных мобильных устройств</span>
+            <div class="row service-header">
+                <div class="col-12 col-lg-4 service-header-tab active">Быстрый разряд <span>батареи</span></div>
+                <div class="col-12 col-lg-4 service-header-tab">Попадание <span>влаги</span></div>
+                <div class="col-12 col-lg-4 service-header-tab">Перезагрузка или <span>выключение</span></div>
+            </div>
+
+            <div class="service-tab row">
+                <div class="service-outer col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="service-inner">
+                        <div class="service-text">
+                            <p class="service__text">Факторов может быть множество, мы разберем самые основные:</p>
+                            <ul class="service-tab__list">
+                            	<li class="service-tab-li">В первую очередь необходимо включить функцию энергосбережения (данная функция имеется практически во всех смартфонах (планшетах) большинства производителей). Поищите ее в настройках устройства.</li>
+                            	<li class="service-tab-li">Обязательно необходимо выключать функции Bluetooth, WI-FI и GPS если вы ими не пользуетесь в данный момент. Данные функции во включенном состоянии находятся в поиске устройств , что очень сильно повышает энергопотребление.</li>
+                            	<li class="service-tab-li">Установленные приложения так же могут влиять на энергопотребление. Если первые два пункта не повлияли на время работы смартфона (планшета), то необходимо сделать общий сброс на заводские настройки, НО ОБЯЗАТЕЛЬНО ПРЕДВАРИТЕЛЬНО СОХРАНИТЬ ВСЮ ИНФОРМАЦИЮ ИНАЧЕ ОНА БУДЕТ УТЕРЯНА), (так же отформатируйте карту памяти если она используется в устройстве).</li>
+                            	<li class="service-tab-li">Следующим шагом, при условии, что предыдущие пункты не помогли, необходимо попробовать поменять АКБ (батарею). В данном случае уже придется потратить деньги. Советуем покупать только ОРИГИНАЛЬНЫЕ батареи.</li>
+                            	<li class="service-tab-li">Если и замена батареи не помогла, то вам необходимо обратиться в наш специализированный сервисный центр по ремонту мобильных телефонов и планшетов, скорей всего в ваш смартфон (планшет) попала влага или какой то заводской дефект, который своими силами вы исправить не сможете.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <img src="img/batt.png" alt="" class="hide-img">
+                </div>
+            </div>
 
 
+            <div class="service-tab row d-none">
+                <div class="col-md-6 col-sm-6">
+                    <img src="img/image-8.png" alt="" class="hide-img">
+                </div>
+                <div class="service-outer col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="service-inner">
+                        <p>Ни за что, ни когда не включайте любое ваше устройство после того как вы его намочили! Если даже телефон включился то это не значит, что он будет работать в дальнейшем долго и качественно. Жидкость будет окисляться во взаимодействии с электричеством и ваш смартфон (планшет) будет медленно и мучительно умирать...</p>
+                        <p>Первым делом необходимо вытащить АКБ (батарею) из телефона и не вставлять ее как минимум сутки, просушить телефон на батарее центрального отопления либо феном для сушки волос, а лучше сразу отнести в наш сервисный центр по ремонту мобильных телефонов и планшетов, где ваш смартфон (планшет) осмотрят на повреждения и высушат.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="service-tab row d-none">
+                <div class="service-outer col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="service-inner">
+                        <p>Данная проблема чаще всего возникает из-за некорректных приложений, которые вы могли установить в ваш телефон. Решением данной проблемы является общий сброс на заводские настройки (ОБЯЗАТЕЛЬНО ПРЕДВАРИТЕЛЬНО СОХРАНИТЬ ВСЮ ИНФОРМАЦИЮ ИНАЧЕ ОНА БУДЕТ УТЕРЯНА), (так же отформатируйте карту памяти если она используется в устройстве). Если общий сброс не помогает, то необходимо отнести ваш смартфон (планшет) в наш специализированный сервисный центр по ремонту сотовых телефонов и планшетов, где произведут диагностику вашего аппарата, произведут смену программного обеспечения на последнюю версию или аппаратный ремонт.</p>
+                        <p>В завершении хотелось бы сказать, что смартфоны и планшеты сейчас идут на одном уровне с компьютерами и конечно же возможны сбои в работе, если возникают какие то проблемы при работе устройства (потерял сеть например или не запускается приложение) в первую очередь перезагрузите свой девайс, чаще всего достаточно этого действия.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <img src="img/51.png" alt="" class="hide-img">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+		</section>
+	</main>
+	<a id="contacts"></a>
+	<footer class="footer">
+		<div class="container-own">
+			<div class="footer__wrapper">
+				<!-- <div class="footer__block hide-block">
+				<h3 class="footer__title">О нас</h3>
+				<p class="footer__text">«Телремсервис» — профессиональный и качественный ремонт</p>
+				<p>Телремсервис &copy; 2009-2019</p>
+				<p>Разработка:</p>
+				<p>Kukaracha</p>
+			</div> -->
+
+			<div class="footer__block">
+				<h3 class="footer__title">Обратная связь</h3>
+				<p class="footer__text">г. Могилев, ул. Королева, 37а(мк-н Юбилейный, ТД «Атлант» "ЕВРООПТ" 2 этаж)</p>
+				<p>· НУЖНА ПОМОЩЬ? ЗВОНИТЕ! ·</p>
+				<a href="tel:+375296016055" class="phone">+375 (29) 601-60-55</a>
+				<a href="tel:+375336264568" class="phone">+375 (33) 626-45-68</a>
+			</div>
+			<div class="footer__block move-block-social soc">
+				<h3 class="footer__title footer__soc">Мы в соц.сетях</h3>
+				<div class="socials">
+				<a href="https://vk.com/telremby"><img src="img/vk.png" alt="" class="vk"></a>
+				<a href="https://instagram.com/telremservice_mogilev"><img src="img/instagram.png" class="insta"></a>
+				</div>
+			</div>
+			<div class="footer__block hide-block">
+				<h3 class="footer__title">О нас</h3>
+				<p class="footer__text">«Телремсервис» — профессиональный и качественный ремонт</p>
+				<p>Телремсервис &copy; 2009-2019</p>
+				<p>Разработка: Kukaracha</p>
+			</div>
+			</div>
+		</div>
+	</footer>
+
+	<div id="back-top">
+		<a href="#" onclick="return up()">ВВЕРХ</a>  
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+	<script src="script/wow.min.js"></script>
+	<script src="https://kit.fontawesome.com/696e09c7c1.js"></script>
+	<script src="script/index.js"></script>
+	<script src="script/script.js"></script>
+	
 </body>
 </html>
+
+
