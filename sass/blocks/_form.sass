@@ -1,0 +1,94 @@
+.form
+	margin-top: 30px
+	margin-bottom: 30px
+	&__title
+		font-size: 30px
+		text-align: center
+		line-height: 1.4
+		display: block
+	&__control
+		margin-top: 30px
+		margin-bottom: 30px
+		padding: 15px
+		width: 33%
+		border-radius: 25px
+		border: 1px solid #db4453
+	&__message
+		padding: 15px
+		width: 100%
+		border-radius: 25px
+		margin-bottom: 30px
+		border: 1px solid #db4453
+.btn
+	display: flex
+	justify-content: center
+	background: #db4453
+	color: #fff
+	padding: 15px
+	border-radius: 25px
+	margin-top: 30px
+	width: 33%
+	margin: 0 auto
+#back-top 
+    position: fixed
+    bottom: 0px
+    padding: 0px
+    left: 56.5% 
+    margin-left: 500px
+    z-index: 99991
+    
+#back-top a
+    width: 77px
+    height: 30px
+    background: #db4453
+    color: #fff
+    font-weight: 500
+    letter-spacing: 1px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-decoration: none
+    -webkit-transition: all linear 0.2s 
+    -moz-transition: all linear 0.2s
+    -ms-transition: all linear 0.2s
+    -o-transition: all linear 0.2s
+    transition: all linear 0.2s
+    text-align: center
+     
+#back-top a:hover
+    height: 70px
+    display: block
+    background: #db4453
+    -webkit-transition: all linear 0.2s 
+    -moz-transition: all linear 0.2s
+    -ms-transition: all linear 0.2s
+    -o-transition: all linear 0.2s
+    transition: all linear 0.2s
+    // color: $black
+@media(max-width: 992px)
+	.form
+		&__control
+			display: flex
+			flex-wrap: wrap
+			margin: 0 auto
+			margin-top: 30px
+			width: 100%
+		&__message
+			margin-top: 30px
+	.btn
+		margin-top: 10px
+@media(max-width: 576px)
+	.btn
+		width: 100%
+@media(max-width: 415px)
+	// .container-own
+	// 	width: 100%
+	.btn
+		width: 100%
+	.form__title
+		font-size: 25px
+@media (max-width: 375px)
+	.form
+		&__title
+			font-size: 20px
+		

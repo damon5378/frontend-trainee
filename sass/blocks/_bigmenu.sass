@@ -1,0 +1,40 @@
+.slider
+	display: flex
+	justify-content: center
+	align-items: center
+.text
+    color: #000
+    font-size: 3rem
+    font-family: 'Bad Script', cursive
+.item
+	height: 100vh
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-basis: 25%
+	// background-color: #e43f43
+    border: 1px solid #000
+    transition: flex-basis 1s linear
+.item:hover
+	flex-basis: 70%
+.item-1
+	background: url(../img/hero2.jpg) no-repeat center center
+	background-size: cover
+.item-2
+	background: url(../img/repair.jpg) no-repeat center center
+	background-size: cover
+.item-3
+	background: url(../img/service.jpg) no-repeat center center
+	background-size: cover
+.item-4
+	background: url(../img/unlock.jpg) no-repeat center center
+	background-size: cover
+.item-5
+	background: url(../img/navigation.jpg) no-repeat center center
+	background-size: cover
+.item-6
+	background: url(../img/contacts.jpg) no-repeat center center
+	background-size: cover
+@media (max-width: 1024px)
+    .slider
+        display: none

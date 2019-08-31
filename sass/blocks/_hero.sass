@@ -1,0 +1,116 @@
+.hero
+	transform-style: preserv-3d
+	position: relative
+	filter: brightness(40%)
+	// background: url("../img/hero2.jpg") center
+	// background-size: cover
+	height: 100vh
+	&:before
+		content: ""
+		display: block
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		top: 0
+		z-index: -1
+		transform-origin: center
+		min-height: 100vh
+		background: url("../img/hero2.jpg") center
+		background-size: cover
+		transform: translateZ(-1px)
+	&__title
+		font-size: 8rem
+		position: absolute
+		top: 20%
+		left: 50%
+		transform: translate(-50%, -50%)
+		color: #fff
+		width: 100%
+	&__subtitle
+		font-size: 5rem
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		color: #fff
+		width: 100%
+	&__wrapper
+		text-align: center
+		text-transform: uppercase
+		transform-style: inherit
+@media (max-width: 2560px)
+	.hero
+		display: none
+// @media (max-width: 1920px)
+// 	.hero
+// 		&__title
+// 			font-size: 15rem
+// 			top: 12%
+// 			left: 49%
+// 		&__subtitle
+// 			font-size: 4rem
+// 			top: 76%
+// 			left: 59%
+// @media (max-width: 1366px)
+// 	.hero
+// 		&__title
+// 			font-size: 9rem
+// 			top: 35%
+// 			width: 100%
+// 			transform: translate(-50%, -50%)
+// 		&__subtitle
+// 			font-size: 5rem
+// 			top: 57%
+// 			left: 50%
+// 			width: 100%
+// 			transform: translate(-50%, -50%)
+@media (max-width: 1024px)
+	.hero
+		display: block
+// @media (max-width: 1170px)
+// 	.hero
+// 		&__title
+// 			top: 12%
+// 		&__subtitle
+// 			top: 33%
+@media (max-width: 1080px)
+	.hero
+		&__title
+			font-size: 7rem
+			// top: 16%
+		&__subtitle
+			font-size: 4rem
+			// top: 34%
+// @media (max-width: 992px)
+// 	.hero
+// 		&__title
+// 			left: 50%
+// 		&__subtitle
+// 			left: 50%
+@media (max-width: 768px)
+	.hero
+		&__title
+			font-size: 5rem
+			// top: 16%
+		&__subtitle
+			font-size: 3rem
+			// top: 34%
+			// left: 49%
+@media (max-width: 415px)
+	.hero
+		&__title
+			font-size: 2.2rem
+			// top: 17%
+			// left: 50%
+		&__subtitle
+			font-size: 1.9rem
+			// top: 34%
+			// left: 49%
+@media (max-width: 320px)
+	.hero
+		&__title
+			font-size: 2rem
+		&__subtitle
+			font-size: 1.7rem
+	

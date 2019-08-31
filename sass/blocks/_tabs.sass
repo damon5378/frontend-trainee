@@ -1,0 +1,81 @@
+.tabs
+  &__title
+    text-align: center
+    display: block
+    margin-bottom: 50px
+    font-size: 30px
+.service
+  padding: 5rem
+.service-header 
+  border: 1px solid #db4453
+  border-radius: 3rem
+  margin-bottom: 3rem
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+.service-header-tab
+  -webkit-box-flex: 1
+  -ms-flex-positive: 1
+  flex-grow: 1
+  height: auto
+  text-transform: uppercase
+  vertical-align: middle
+  padding: .5rem 1rem
+  cursor: pointer
+  margin: 0
+  font-weight: 400
+  color: #db4453
+  font-size: 1.2rem
+  text-align: center
+.service-header-tab.active
+  background-color: #db4453
+  border-radius: 3rem
+  color: #fff !important
+.service-header-tab span
+  font-weight: 700
+.service .description
+  font-weight: 300
+  color: #19b5fe
+.service .service-outer
+  text-align: left
+.service-inner
+  text-align: justify
+.service img 
+  width: 100%
+.service__text
+  font-size: 17px
+@media (max-width: 1024px)
+  .service-header-tab
+    font-size: 1rem
+  .hide-img
+    display: none
+@media (max-width: 768px)
+  .accordion-item
+    width: 81%
+  .tabs
+    &__title
+      font-size: 25px
+@media (max-width: 415px)
+  .tabs
+    display: none
+    // &__title
+    //   text-align: left
+    //   display: block
+    //   width: 225px
+    //   margin-left: -33px
+    //   font-size: 20px
+  .row
+    margin-right: -60px
+    margin-left: -60px
+  .container
+    padding-right: 0
+    padding-left: 0
+  .service-header-tab
+    font-size: .9rem
+  .accordion-item
+    width: 81%

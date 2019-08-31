@@ -1,0 +1,80 @@
+.footer
+	position: relative
+	// background: #db4453
+	background: url('../img/footer_bg.jpg')
+	color: #fff
+	padding: 40px 40px
+	&__wrapper
+		display: flex
+		justify-content: space-between
+	&__text
+		width: 300px
+	&__title
+		text-transform: uppercase
+.socials
+	display: flex
+	justify-content: space-around
+.vk
+	// margin-left: 20px
+	// margin-right: 50px
+.insta
+	width: 26px
+	height: 26px
+.phone
+	display: block
+	text-decoration: none
+	color: #fff
+	&:hover
+		text-decoration: none
+		color: #fff
+@media(max-width: 768px)
+	// .hide-block
+	// 	position: absolute
+	// 	top: 50%
+	// 	left: 50%
+	.footer
+		&__wrapper
+			column-count: 3
+		&__text
+			width: 170px
+		&__soc
+			text-align: center
+			margin-bottom: 30px
+	.soc
+		width: 300px
+	.footer, h3, p, a
+		font-size: 15px
+		// &__title
+		// 	display: none
+	.move-block-social
+		// position: absolute
+		// top: 10%
+		// left: 65%
+		// transform: translate(-20%, 15%)
+	.vk-center
+		margin-top: 30px
+@media(max-width: 576px)
+	.footer
+		&__text
+			width: 180px
+	// .soc
+	// 	width: 300px
+	.footer .container-own
+		width: 100%
+		// &__title
+		// 	font-size: 20px
+@media(max-width: 425px)
+	.footer .container-own
+		width: 50%
+	.footer
+		column-count: 1
+		&__wrapper
+			flex-wrap: wrap
+			justify-content: center
+			text-align: center
+	.socials
+		margin-bottom: 20px
+	.footer, h3, p, a
+		font-size: 10px
+
+

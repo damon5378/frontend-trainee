@@ -1,0 +1,136 @@
+.navbar
+	padding: 20px 0
+	// background-color: #db4453
+	background: url('../img/footer_bg.jpg')
+	&__wrapper
+		display: flex
+		justify-content: space-around
+		align-items: center
+	&__block
+		display: flex
+		justify-content: space-around
+	&__item
+		list-style: none
+		margin-right: 40px
+	&__link
+		padding: 3px 9px
+		text-decoration: none
+		color: $white
+		border: 2px solid transparent
+		border-radius: 20px
+		// font-family: 'Cuprum', sans-serif;
+		&:hover
+			text-decoration: none
+			color: #fff
+			border-color: #fff
+			// font-weight: 700
+	&__logo
+		display: flex
+		align-items: center
+		margin-right: 10px
+		color: #fff
+.logo
+	font-size: 25px
+	display: block
+.sublogo
+	font-size: 16px
+	display: block
+.ham
+	display: flex
+	justify-content: flex-end
+	align-items: center
+	&__menu
+		display: block
+		width: 50px
+		height: 50px
+		background: #13ebeb
+		border-radius: 50%
+		position: relative
+.ham__active span:before
+	transform: rotate(45deg)
+.ham__active span
+	height: 0
+.ham__active span:after
+	transform: rotate(-45deg)
+.cross
+	position: absolute
+	top: 50%
+	left: 50%
+	width: 20px
+	height: 2px
+	background-color: #222
+	margin-top: -1px
+	margin-left: -10px
+	&:before, &:after
+		content: ""
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 20px
+		height: 2px
+		background-color: #222
+		margin-top: -1px
+		margin-left: -10px
+		display: block
+		transition: 0.3s
+	&:before
+		transform: translateY(-5px)
+	&:after
+		transform: translateY(5px)
+.menu-block
+    display: flex
+    justify-content: center
+    align-items: center
+.menu-nav__link
+    display: inline-block
+    text-decoration: none
+    // color: $black
+    margin-right: 20px
+    margin-top: 15px
+.menu-nav
+    transition: 0.5s
+    transform-origin: top center
+    transform: scale(0) transformX(20%)
+    opacity: 0
+.menu-nav_active
+    transform: scale(1) transformX(0%)
+    opacity: 1
+@media (max-width: 2560px)
+	.section-ham, .ham
+		display: none
+	.navbar
+		display: none
+
+@media (max-width: 1170px)
+	.navbar
+		&__wrapper
+			justify-content: space-around
+@media (max-width: 1024px)
+	.navbar
+		display: block
+@media (max-width: 1080px)
+	.navbar
+		&__item
+			font-size: 13px
+	.logo
+		font-size: 20px
+	.sublogo
+		font-size: 12px
+@media (max-width: 768px)
+	.navbar
+		&__item
+			display: none
+	.section-ham
+		display: flex
+		
+	.ham
+		display: flex
+		justify-content: flex-end
+	.menu-nav__link
+		color: #fff
+	.menu-block
+		text-align: center
+		
+@media (max-width: 576px)
+	.navbar
+		
