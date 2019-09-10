@@ -1,0 +1,1747 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* line 11, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+/* line 23, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+/* line 31, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 40, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 53, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 64, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 76, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 85, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 95, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 105, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 116, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 125, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 133, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 137, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+/* line 148, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 160, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 176, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 186, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 195, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 206, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 218, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 229, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 240, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 253, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+/* line 261, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+/* line 270, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 280, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 290, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+/* line 299, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 308, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+/* line 320, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 328, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+/* line 339, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+/* line 347, D:/Уроки/COURSE/todo/src/sass/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 1, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+* {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Alice', serif;
+}
+
+/* line 10, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* line 13, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+img {
+  max-width: 100%;
+}
+
+/* line 15, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+.container-own {
+  width: 1170px;
+  margin: auto;
+}
+
+/* line 18, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+a {
+  background-color: transparent;
+}
+
+/* line 20, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+p {
+  line-height: 1.4;
+}
+
+/* line 22, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+ul, p, li {
+  font-size: 18px;
+}
+
+/* line 24, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+.fa-apple {
+  color: silver;
+  display: inline-block;
+  text-align: center;
+}
+
+/* line 28, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+.nokia {
+  margin-top: -81px;
+}
+
+/* line 30, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+.samsung {
+  margin-top: -81px;
+}
+
+/* line 32, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+.map {
+  margin-top: 30px;
+}
+
+/* line 34, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+.form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* line 37, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+.form__title {
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.4;
+  display: block;
+}
+
+/* line 42, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+.form__control {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 15px;
+  width: 33%;
+  border-radius: 25px;
+  border: 1px solid #db4453;
+}
+
+/* line 49, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+.form__message {
+  padding: 15px;
+  width: 100%;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  border: 1px solid #db4453;
+}
+
+/* line 55, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+.btn {
+  display: flex;
+  justify-content: center;
+  background: #db4453;
+  color: #fff;
+  padding: 15px;
+  border-radius: 25px;
+  margin-top: 30px;
+  width: 33%;
+  margin: 0 auto;
+}
+
+/* line 65, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+#back-top {
+  position: fixed;
+  bottom: 0px;
+  padding: 0px;
+  left: 56.5%;
+  margin-left: 500px;
+  z-index: 99991;
+}
+
+/* line 73, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+#back-top a {
+  width: 77px;
+  height: 30px;
+  background: #db4453;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+  text-align: center;
+}
+
+/* line 91, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+#back-top a:hover {
+  height: 70px;
+  display: block;
+  background: #db4453;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+}
+
+@media (max-width: 1170px) {
+  /* line 103, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+  .container-own {
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  /* line 107, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+  .form__control {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 100%;
+  }
+  /* line 113, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+  .form__message {
+    margin-top: 30px;
+  }
+  /* line 115, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+  .btn {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 118, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+  .container-own {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 121, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 415px) {
+  /* line 126, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+  .btn {
+    width: 100%;
+  }
+  /* line 128, D:/Уроки/COURSE/todo/src/sass/_interface.sass */
+  .form__title {
+    font-size: 25px;
+  }
+}
+
+/* line 1, D:/Уроки/COURSE/todo/src/sass/blocks/_boot.sass */
+.pos-f-t {
+  position: relative;
+}
+
+/* line 3, D:/Уроки/COURSE/todo/src/sass/blocks/_boot.sass */
+.navbar-toggler {
+  position: absolute;
+  left: 90%;
+  outline: none;
+}
+
+/* line 7, D:/Уроки/COURSE/todo/src/sass/blocks/_boot.sass */
+.menu-f {
+  position: absolute;
+  top: 105%;
+  left: 0;
+}
+
+/* line 1, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.navbar {
+  padding: 30px 0;
+}
+
+/* line 5, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.navbar__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* line 9, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.navbar__block {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 12, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.navbar__item {
+  list-style: none;
+  margin-right: 40px;
+}
+
+/* line 15, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.navbar__link {
+  padding: 3px 9px;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 20px;
+}
+
+/* line 22, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.navbar__link:hover {
+  text-decoration: none;
+  color: #fff;
+  border-color: #fff;
+}
+
+/* line 27, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  color: #fff;
+}
+
+/* line 32, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.logo {
+  font-size: 35px;
+  display: block;
+  background-color: #343a40;
+  margin: 0 auto;
+  color: #fff;
+  padding: 20px 0;
+}
+
+/* line 40, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.sublogo {
+  font-size: 16px;
+  display: block;
+}
+
+/* line 43, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.ham {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* line 47, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.ham__menu {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: #13ebeb;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* line 54, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.ham__active span:before {
+  transform: rotate(45deg);
+}
+
+/* line 56, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.ham__active span {
+  height: 0;
+}
+
+/* line 58, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.ham__active span:after {
+  transform: rotate(-45deg);
+}
+
+/* line 60, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.cross {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: #222;
+  margin-top: -1px;
+  margin-left: -10px;
+}
+
+/* line 69, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.cross:before, .cross:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: #222;
+  margin-top: -1px;
+  margin-left: -10px;
+  display: block;
+  transition: 0.3s;
+}
+
+/* line 81, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.cross:before {
+  transform: translateY(-5px);
+}
+
+/* line 83, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.cross:after {
+  transform: translateY(5px);
+}
+
+/* line 85, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.menu-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 89, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.menu-nav__link {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+/* line 95, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.menu-nav {
+  transition: 0.5s;
+  transform-origin: top center;
+  transform: scale(0) transformX(20%);
+  opacity: 0;
+}
+
+/* line 100, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+.menu-nav_active {
+  transform: scale(1) transformX(0%);
+  opacity: 1;
+}
+
+@media (max-width: 2560px) {
+  /* line 104, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+  .section-ham, .ham {
+    display: none;
+  }
+}
+
+@media (max-width: 1170px) {
+  /* line 109, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+  .navbar__wrapper {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 1080px) {
+  /* line 113, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+  .navbar__item {
+    font-size: 13px;
+  }
+  /* line 115, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+  .logo {
+    font-size: 2rem;
+  }
+  /* line 117, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+  .sublogo {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 121, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+  .navbar__item {
+    margin-right: 0;
+  }
+  /* line 130, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+  .section-ham, .ham {
+    display: none;
+  }
+  /* line 132, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+  .menu-nav__link {
+    color: #fff;
+  }
+  /* line 134, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+  .menu-block {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 139, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+  .navbar__wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  /* line 142, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+  .navbar-toggler {
+    left: 83%;
+    top: 25%;
+  }
+}
+
+@media (max-width: 320px) {
+  /* line 146, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+  .logo {
+    font-size: 1rem;
+    text-align: left;
+  }
+  /* line 149, D:/Уроки/COURSE/todo/src/sass/blocks/_navbar.sass */
+  .navbar-toggler {
+    left: 75%;
+  }
+}
+
+/* line 1, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+.hero {
+  transform-style: preserv-3d;
+  position: relative;
+  filter: brightness(40%);
+  height: 100vh;
+}
+
+/* line 8, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+.hero:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  transform-origin: center;
+  min-height: 100vh;
+  background: url("../img/hero2.jpg") center;
+  background-size: cover;
+  transform: translateZ(-1px);
+}
+
+/* line 22, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+.hero__title {
+  font-size: 8rem;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 100%;
+}
+
+/* line 30, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+.hero__subtitle {
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 100%;
+}
+
+/* line 38, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+.hero__wrapper {
+  text-align: center;
+  text-transform: uppercase;
+  transform-style: inherit;
+}
+
+@media (max-width: 1080px) {
+  /* line 73, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+  .hero__title {
+    font-size: 7rem;
+  }
+  /* line 76, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+  .hero__subtitle {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 87, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+  .hero__title {
+    font-size: 5rem;
+  }
+  /* line 90, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+  .hero__subtitle {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 95, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+  .hero {
+    line-height: 1.4;
+  }
+  /* line 96, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+  .hero__title {
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 415px) {
+  /* line 102, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+  .hero__title {
+    font-size: 2.2rem;
+  }
+  /* line 106, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+  .hero__subtitle {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 320px) {
+  /* line 112, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+  .hero__title {
+    font-size: 2rem;
+  }
+  /* line 114, D:/Уроки/COURSE/todo/src/sass/blocks/_hero.sass */
+  .hero__subtitle {
+    font-size: 1.7rem;
+  }
+}
+
+/* line 2, D:/Уроки/COURSE/todo/src/sass/blocks/_form.sass */
+.form__title {
+  font-size: 30px;
+  text-align: center;
+}
+
+/* line 3, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+.offer-block__title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* line 7, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+.offer__title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* line 11, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+.offer__image {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+/* line 16, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+.offer__bold {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* line 21, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+.offer__boldleft {
+  font-weight: bold;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+/* line 25, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+.offer__text {
+  margin-top: 30px;
+  text-align: justify;
+}
+
+/* line 35, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+.offer__card {
+  display: flex;
+  justify-content: center;
+  background: #db4453;
+  padding: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(56, 56, 56, 0.5);
+}
+
+/* line 43, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+.offer__card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+/* line 45, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+.mrn {
+  margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+  /* line 49, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+  .offer__image {
+    flex-wrap: wrap;
+  }
+  /* line 51, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+  .offer__card {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 58, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+  .offer__bold {
+    text-align: center;
+  }
+  /* line 61, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+  .offer-block__title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 64, D:/Уроки/COURSE/todo/src/sass/blocks/_offer.sass */
+  .offer {
+    display: none;
+  }
+}
+
+/* line 1, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.accordion-item {
+  width: 53%;
+  margin: 0 auto;
+}
+
+/* line 6, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.accordion-item-header {
+  padding: 10px 15px;
+  background: #ed5565;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* line 12, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.accordion-item-content {
+  background: #383838;
+  color: #fff;
+  display: none;
+  line-height: 1.6;
+}
+
+/* line 18, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.accordion-item.show .accordion-item-content {
+  padding: 10px 15px;
+  display: block;
+}
+
+/* line 22, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.accordion-item.show .accordion-item-header {
+  background: #da4453;
+  color: #fff;
+}
+
+/* line 26, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.accordion-list {
+  list-style: none;
+}
+
+/* line 29, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.accordion-list-li {
+  line-height: 2.4;
+}
+
+/* line 32, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.accordion-item {
+  margin-bottom: .25rem;
+}
+
+/* line 35, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+.accordion-item:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  /* line 40, D:/Уроки/COURSE/todo/src/sass/blocks/_offer_accord.scss */
+  .accordion-item {
+    width: 70%;
+  }
+}
+
+/* line 2, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.repair-title__text {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 6, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.repair-card__title {
+  text-align: center;
+}
+
+/* line 8, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.repair__card {
+  max-width: 30%;
+  background: white;
+  padding: 30px;
+  margin-right: 15px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 0 13px rgba(219, 68, 83, 0.5);
+}
+
+/* line 19, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.repair__card:hover {
+  box-shadow: 0 0 15px rgba(219, 68, 83, 0.7);
+}
+
+/* line 21, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.repair__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* line 26, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.repair__text {
+  text-align: justify;
+}
+
+/* line 28, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.repair__apple {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 31, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.repair__nokia {
+  margin-top: -90px;
+  margin-bottom: 63px;
+}
+
+/* line 34, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.repair__samsung {
+  margin-top: -160px;
+}
+
+/* line 36, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.nokia__text {
+  margin-top: -166px;
+}
+
+/* line 38, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+.samsung__text {
+  margin-top: -120px;
+}
+
+@media (max-width: 768px) {
+  /* line 43, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+  .repair-title__text {
+    margin-top: 40px;
+  }
+  /* line 45, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+  .repair__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 48, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+  .repair__card {
+    max-width: 80%;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 53, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+  .repair__wrapper {
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 415px) {
+  /* line 57, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+  .repair__wrapper {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  /* line 61, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+  .repair__card {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  /* line 65, D:/Уроки/COURSE/todo/src/sass/blocks/_repair.sass */
+  .repair__wrapper {
+    margin-left: 5px;
+  }
+}
+
+/* line 2, D:/Уроки/COURSE/todo/src/sass/blocks/_uncoding.sass */
+.uncoding__title {
+  font-size: 30px;
+  text-align: center;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 320px) {
+  /* line 10, D:/Уроки/COURSE/todo/src/sass/blocks/_uncoding.sass */
+  .uncoding__text {
+    font-size: 14px;
+  }
+}
+
+/* line 2, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+.tabs__title {
+  text-align: center;
+  display: block;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+/* line 7, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+.service {
+  padding: 5rem;
+}
+
+/* line 9, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+.service-header {
+  border: 1px solid #db4453;
+  border-radius: 3rem;
+  margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/* line 21, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+.service-header-tab {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  height: auto;
+  text-transform: uppercase;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+  cursor: pointer;
+  margin: 0;
+  font-weight: 400;
+  color: #db4453;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* line 35, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+.service-header-tab.active {
+  background-color: #db4453;
+  border-radius: 3rem;
+  color: #fff !important;
+}
+
+/* line 39, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+.service-header-tab span {
+  font-weight: 700;
+}
+
+/* line 41, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+.service .description {
+  font-weight: 300;
+  color: #19b5fe;
+}
+
+/* line 44, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+.service .service-outer {
+  text-align: left;
+}
+
+/* line 46, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+.service-inner {
+  text-align: justify;
+}
+
+/* line 48, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+.service img {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  /* line 51, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+  .service-header-tab {
+    font-size: .8rem;
+  }
+  /* line 53, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+  .hide-img {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 56, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+  .accordion-item {
+    width: 81%;
+  }
+  /* line 59, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+  .tabs__title {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 415px) {
+  /* line 62, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+  .tabs {
+    display: none;
+  }
+  /* line 70, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+  .row {
+    margin-right: -60px;
+    margin-left: -60px;
+  }
+  /* line 73, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* line 76, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+  .service-header-tab {
+    font-size: .9rem;
+  }
+  /* line 78, D:/Уроки/COURSE/todo/src/sass/blocks/_tabs.sass */
+  .accordion-item {
+    width: 81%;
+  }
+}
+
+/* line 1, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+.timer {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+
+/* line 4, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+.timer-title, .timer-action {
+  font-weight: 300;
+}
+
+/* line 6, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+.timer-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* line 10, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+#timer-days, #timer-hours, #timer-minutes {
+  margin-right: 15px;
+}
+
+/* line 12, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+.devided {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+/* line 15, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+.timer-action {
+  margin-top: 3rem;
+}
+
+/* line 17, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+.timer-numbers {
+  font-size: 4.5rem;
+  text-align: center;
+  color: #db4453;
+}
+
+/* line 21, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+#timer-seconds {
+  font-size: 26px;
+}
+
+/* line 23, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+.day-sub, .hours-sub, .minutes-sub {
+  font-size: 20px;
+}
+
+@media (max-width: 1920px) {
+  /* line 26, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+  .mac {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1366px) {
+  /* line 30, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+  .timer__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  /* line 34, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+  .mac {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* line 38, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+  .timer__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 44, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+  .timer-numbers {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  /* line 47, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+  .timer-numbers {
+    font-size: 2rem;
+  }
+  /* line 49, D:/Уроки/COURSE/todo/src/sass/blocks/_timer.sass */
+  .timer-title {
+    font-size: 25px;
+  }
+}
+
+/* line 1, D:/Уроки/COURSE/todo/src/sass/blocks/_relax.sass */
+.relax {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/1.jpg") no-repeat center;
+  background-size: cover;
+}
+
+/* line 6, D:/Уроки/COURSE/todo/src/sass/blocks/_relax.sass */
+.relax__title {
+  font-size: 40px;
+  text-align: center;
+  display: block;
+  margin-bottom: 30px;
+}
+
+/* line 1, D:/Уроки/COURSE/todo/src/sass/blocks/_price.scss */
+body {
+  background: url(https://jackrugile.com/images/misc/noise-diagonal.png);
+  color: #444;
+  font: 100%/30px 'Helvetica Neue', helvetica, arial, sans-serif;
+  text-shadow: 0 1px 0 #fff;
+}
+
+/* line 8, D:/Уроки/COURSE/todo/src/sass/blocks/_price.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 12, D:/Уроки/COURSE/todo/src/sass/blocks/_price.scss */
+em {
+  font-style: italic;
+}
+
+/* line 16, D:/Уроки/COURSE/todo/src/sass/blocks/_price.scss */
+table {
+  background: #f5f5f5;
+  border-collapse: separate;
+  box-shadow: inset 0 1px 0 #fff;
+  font-size: 10px;
+  line-height: 24px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+/* line 27, D:/Уроки/COURSE/todo/src/sass/blocks/_price.scss */
+th {
+  background: #db4453 url(https://jackrugile.com/images/misc/noise-diagonal.png);
+  border-left: 1px solid #555;
+  border-right: 1px solid #777;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #333;
+  box-shadow: inset 0 1px 0 #999;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  position: relative;
+  text-shadow: 0 1px 0 #000;
+}
+
+/* line 41, D:/Уроки/COURSE/todo/src/sass/blocks/_price.scss */
+th:after {
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.08));
+  content: '';
+  display: block;
+  height: 25%;
+  left: 0;
+  margin: 1px 0 0 0;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+}
+
+/* line 53, D:/Уроки/COURSE/todo/src/sass/blocks/_price.scss */
+th:first-child {
+  border-left: 1px solid #777;
+  box-shadow: inset 1px 1px 0 #999;
+}
+
+/* line 58, D:/Уроки/COURSE/todo/src/sass/blocks/_price.scss */
+th:last-child {
+  box-shadow: inset -1px 1px 0 #999;
+}
+
+/* line 62, D:/Уроки/COURSE/todo/src/sass/blocks/_price.scss */
+td {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 10px 15px;
+  position: relative;
+  transition: all 300ms;
+}
+
+/* line 72, D:/Уроки/COURSE/todo/src/sass/blocks/_price.scss */
+td:first-child {
+  box-shadow: inset 1px 0 0 #fff;
+}
+
+/* line 76, D:/Уроки/COURSE/todo/src/sass/blocks/_price.scss */
+td:last-child {
+  border-right: 1px solid #e8e8e8;
+  box-shadow: inset -1px 0 0 #fff;
+}
+
+/* line 81, D:/Уроки/COURSE/todo/src/sass/blocks/_price.scss */
+tr {
+  background: url(https://jackrugile.com/images/misc/noise-diagonal.png);
+}
+
+/* line 85, D:/Уроки/COURSE/todo/src/sass/blocks/_price.scss */
+tr:nth-child(odd) td {
+  background: #f1f1f1 url(https://jackrugile.com/images/misc/noise-diagonal.png);
+}
+
+/* line 89, D:/Уроки/COURSE/todo/src/sass/blocks/_price.scss */
+tr:last-of-type td {
+  box-shadow: inset 0 -1px 0 #fff;
+}
+
+/* line 93, D:/Уроки/COURSE/todo/src/sass/blocks/_price.scss */
+tr:last-of-type td:first-child {
+  box-shadow: inset 1px -1px 0 #fff;
+}
+
+/* line 97, D:/Уроки/COURSE/todo/src/sass/blocks/_price.scss */
+tr:last-of-type td:last-child {
+  box-shadow: inset -1px -1px 0 #fff;
+}
+
+/* line 101, D:/Уроки/COURSE/todo/src/sass/blocks/_price.scss */
+tbody:hover td {
+  color: transparent;
+  text-shadow: 0 0 3px #aaa;
+}
+
+/* line 106, D:/Уроки/COURSE/todo/src/sass/blocks/_price.scss */
+tbody:hover tr:hover td {
+  color: #444;
+  text-shadow: 0 1px 0 #fff;
+}
+
+/* line 110, D:/Уроки/COURSE/todo/src/sass/blocks/_price.scss */
+.price__table {
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  /* line 114, D:/Уроки/COURSE/todo/src/sass/blocks/_price.scss */
+  table {
+    display: none;
+  }
+}
+
+/* line 1, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+.footer {
+  position: relative;
+  background: url("../img/footer_bg.jpg");
+  color: #fff;
+  padding: 40px 40px;
+}
+
+/* line 7, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 10, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+.footer__text {
+  width: 300px;
+}
+
+/* line 12, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+.footer__title {
+  text-transform: uppercase;
+}
+
+/* line 14, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+.socials {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 70px;
+}
+
+/* line 21, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+.insta {
+  width: 26px;
+  height: 26px;
+}
+
+/* line 24, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+.phone {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 28, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+.phone:hover {
+  color: red;
+}
+
+/* line 31, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+.footer a {
+  transition: background-color .3s linear;
+  transition: width .2s linear;
+  width: 100%;
+}
+
+/* line 35, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+.footer a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  /* line 42, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+  .footer__wrapper {
+    column-count: 3;
+  }
+  /* line 44, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+  .footer__text {
+    width: 170px;
+  }
+  /* line 46, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+  .footer__soc {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  /* line 49, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+  .soc {
+    width: 300px;
+  }
+  /* line 51, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+  .footer, h3, p, a {
+    font-size: 16px;
+  }
+  /* line 60, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+  .vk-center {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 64, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+  .footer__text {
+    width: 180px;
+  }
+  /* line 68, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+  .footer .container-own {
+    width: 100%;
+  }
+  /* line 72, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+  .socials {
+    margin-left: 31px;
+  }
+  /* line 74, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+  .hide-block {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  /* line 77, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+  .footer .container-own {
+    width: 50%;
+  }
+  /* line 79, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+  .footer {
+    column-count: 1;
+  }
+  /* line 81, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+  .footer__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  /* line 85, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+  .socials {
+    margin-bottom: 20px;
+  }
+  /* line 87, D:/Уроки/COURSE/todo/src/sass/blocks/_footer.sass */
+  .footer, h3, p, a {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
