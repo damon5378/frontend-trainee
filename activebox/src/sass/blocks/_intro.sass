@@ -1,0 +1,130 @@
+.burger
+    display: none
+    background: none
+    border: none
+    outline: none
+    padding: 9px 2px
+    cursor: pointer
+    &__item
+        display: block
+        width: 25px
+        height: 3px
+        background-color: #fff
+        font-size: 0
+        color: transparent
+        position: relative
+        
+        &:after
+            content: ""
+            display: block
+            width: 20px
+            height: 3px
+            background-color: #fff
+            position: absolute
+            left: 0
+            bottom: -8px
+            z-index: 1
+        &:before
+            content: ""
+            display: block
+            width: 30px
+            height: 3px
+            background-color: #fff
+            position: absolute
+            left: 0
+            top: -8px
+            z-index: 1
+.intro
+    height: 100vh
+    background: teal url("../img/intro.jpg") center no-repeat
+    background-size: cover
+    background-blend-mode: overlay
+    padding-top: 100px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    &__title
+        font-family: 'Open Sans', sans-serif
+        color: #fff
+        font-size: 7.5rem
+        line-height: 1.1
+        margin: 0 0 2rem
+    &__inner
+        width: 100%
+        max-width: 970px
+        margin: 0 auto
+        text-align: center
+    &__subtitle
+        color: #fff
+        font-size: 4rem
+        margin: 0
+.btn
+    display: inline-block
+    vertical-align: top
+    border-radius: 3px
+    font-size: .93rem
+    font-weight: 600
+    text-transform: uppercase
+    text-decoration: none
+    padding: 1rem 1.5rem
+    font-family: inherit
+    color: #fff
+    text-align: center
+    // margin-top: 17rem
+    &--red
+        background-color: #e84545
+        transition: background .3s linear
+        &:hover
+            background-color: #554488
+    &--long
+        min-width: 280px
+
+@media (max-width: 2560px)
+    .intro
+        &__title
+            margin: 0 0 2rem
+    .btn
+        margin-top: 170px
+
+@media (max-width: 1366px)
+    .intro
+        &__title
+            margin: 0 0 2rem
+    .btn
+        margin-top: 170px    
+
+@media (max-width: 1024px)
+    .intro
+        &__title
+            font-size: 4rem
+        &__subtitle
+            margin: 35px
+            font-size: 2.8rem
+
+@media (max-width: 991px)
+    .intro
+        &__title
+            font-size: 4rem
+        &__subtitle
+            font-size: 2.8rem
+    .nav
+        display: none
+    .burger
+        display: block
+
+@media (max-width: 767px)
+    .intro
+        height: auto
+        padding-top: 130px
+        padding-bottom: 30px
+        &__title
+            font-size: 3rem
+        &__subtitle
+            font-size: 2.5rem
+            margin-bottom: 30px
+@media (max-width: 414px)
+    .intro
+        &__title
+            font-size: 2.5rem
+        &__subtitle
+            font-size: 2rem

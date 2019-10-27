@@ -1,0 +1,36 @@
+.social
+    display: flex
+    &__item
+        height: 40px
+        width: 40px
+        border: 1px solid #e8ecee
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 4px
+        background-color: #fff
+        transition: background .3s linear
+        &:hover
+            background-color: #e8ecee
+        &:hover .social__icon
+            fill: blue
+    &__icon
+        fill: #c9cdcf
+        display: block
+        height: 18px
+        transition: fill .3s linear
+    &--footer
+        justify-content: center
+.social--footer .social__item
+    background-color: transparent
+    border-width: 2px
+    border-radius: 5px
+    border-color: #fff
+    &:hover
+        background-color: #fff
+.social--footer .social__icon
+    fill: #fff
+
+        
+        
+        

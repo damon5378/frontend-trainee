@@ -1,0 +1,47 @@
+.team
+    margin: 100px 0 70px
+    &__inner
+        display: flex
+        flex-wrap: wrap
+        maegin: 0 -15px
+    &__item
+        width: 50%
+        padding: 0 15px
+        margin-bottom: 30px
+    &__photo
+        display: block
+        max-width: 100%
+        height: auto
+        border-radius: 50%
+    &__name
+        color: #2d3033
+        font-size: 1.6rem
+        margin-top: 32px
+        margin-bottom: 16px
+    &__position
+        color: #e84545
+        font-size: .94rem
+        margin-bottom: 30px
+        text-transform: uppercase
+    &__text
+        color: #6c7279
+        font-size: .96rem
+        margin-bottom: 55px
+        line-height: 1.5
+        // max-width: 250px
+
+@media (max-width: 767px)
+    .team
+        &__item
+            width: 50%
+@media (max-width: 576px)
+    .team
+        margin: 50px 0 30px
+        &__item
+            width: 100%
+            text-align: center
+        &__photo
+            margin-left: auto
+            margin-right: auto
+    .social
+        justify-content: center
