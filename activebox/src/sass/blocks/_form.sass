@@ -1,0 +1,58 @@
+.form
+	margin-top: 30px
+	margin-bottom: 30px
+	&__title
+		font-size: 30px
+		text-align: center
+		line-height: 1.4
+		display: block
+	&__control
+		margin-top: 30px
+		margin-bottom: 30px
+		padding: 15px
+		width: 33%
+		border-radius: 25px
+		border: 1px solid #db4453
+		&:focus
+			outline: none
+	&__message
+		padding: 15px
+		width: 100%
+		border-radius: 25px
+		margin-bottom: 30px
+		border: 1px solid #db4453
+		&:focus
+			outline: none
+.btnka
+	display: flex
+	justify-content: center
+	background: #db4453
+	color: #fff
+	padding: 15px
+	border-radius: 25px
+	margin-top: 30px
+	width: 33%
+	margin: 0 auto
+	border: none
+	cursor: pointer
+	transition: background-color .3s linear
+	&__color
+		&:hover
+			background-color: #df2336
+			overlay: .5
+	&:focus
+			outline: none
+@media (max-width: 767px)
+	.form
+		&__title
+			font-size: 20px
+		&__control
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			width: 100%
+	.btnka
+		width: 100%
+			
+
+		

@@ -13,3 +13,22 @@
             opacity: 1
         &:first-child
             margin-left: 0
+
+@media (max-width: 991px)
+    .nav
+        display: none
+        position: absolute
+        right: 0
+        top: 100%
+        flex-direction: column
+        width: 100%
+        text-align: right
+        background-color: teal
+        opacity: .75
+        background-blend-mode: overlay
+        
+        &__link
+            padding: 9px 15px
+        &.show
+            display: flex
+            transition: display .3s linear
