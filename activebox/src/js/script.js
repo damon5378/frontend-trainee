@@ -96,7 +96,6 @@ slider.slick({
             transform: "rotateX(0)"
         });
     }, 200);
-
     
   });
 
@@ -116,10 +115,6 @@ slider.slick({
         }, 200);
         });
         
-    
-
-    
-
   $(".modal").on("click", function(e){
       let $this = $(this);
       $this.find('.modal__dialog').css({
@@ -131,13 +126,26 @@ slider.slick({
         $("body").removeClass('no-scroll');
     }, 200);
     
-    
   });
 
   $(".modal__dialog").on("click", function(e){
     e.stopPropagation();
   });
 
-  
+
+  $(window).scroll(function(){
+
+    if($(this).scrollTop() > 40){
+        $('#topBtn').fadeIn();
+    } else {
+        $('#topBtn').fadeOut();
+    }
+  });
+
+  $("#topBtn").click(function(){
+    $('html ,body').animate({
+        scrollTop: 0
+    }, 800);
+  });
 
 });
